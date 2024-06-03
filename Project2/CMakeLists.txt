@@ -1,0 +1,11 @@
+cmake_minimum_required(VERSION 3.24)
+project(Project2)
+set(CMAKE_EXE_LINKER_FLAGS "-static")
+set(CMAKE_CXX_STANDARD 17)
+link_libraries(fltk)
+link_libraries(fltk_images)
+link_libraries(jpeg)
+link_libraries(png)
+link_libraries(z comctl32)
+
+add_executable(Project2 WIN32 main.cpp head.h Homepage.h maze.h Avatar.h win.h monster.h tracing.h)
